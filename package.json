@@ -1,0 +1,44 @@
+{
+  "name": "smartwatch_website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --config webpack.dev.config.js",
+    "build": "webpack --mode production"
+  },
+  "keywords": [],
+  "author": "Christian Diaz Portela <christiandp7@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "7.12.3",
+    "@babel/preset-env": "7.12.1",
+    "@babel/preset-react": "7.12.1",
+    "babel-loader": "8.1.0",
+    "css-loader": "5.0.0",
+    "file-loader": "6.1.1",
+    "html-webpack-plugin": "4.5.0",
+    "mini-css-extract-plugin": "1.0.0",
+    "optimize-css-assets-webpack-plugin": "5.0.4",
+    "sass": "1.27.0",
+    "sass-loader": "10.0.3",
+    "style-loader": "2.0.0",
+    "terser-webpack-plugin": "5.0.0",
+    "webpack": "4.44.2",
+    "webpack-cli": "3.3.12",
+    "webpack-dev-server": "3.11.0"
+  },
+  "dependencies": {
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
