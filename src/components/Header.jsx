@@ -9,9 +9,9 @@ function Header() {
         </a>
         <nav className="header__nav">
           <ul>
-            <li><a href="" className="nav-link"></a></li>
-            <li><a href="" className="nav-link"></a></li>
-            <li><a href="" className="nav-link"></a></li>
+            <li><a href="" className="nav-link">a</a></li>
+            <li><a href="" className="nav-link">b</a></li>
+            <li><a href="" className="nav-link">c</a></li>
           </ul>
         </nav>
       </div>
