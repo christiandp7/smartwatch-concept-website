@@ -1,0 +1,62 @@
+header {
+  .header__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+  }
+  .menu-btn {
+    background-color: transparent;
+    border: 0;
+    outline: none;
+    margin-right: auto;
+    cursor: pointer;
+    svg {
+      width: 35px;
+      height: 35px;
+    }
+  }
+  .brand_logo {
+    position: absolute;
+    svg {
+      max-width: 140px;
+      path {
+        fill: #1f1b20;
+      }
+    }
+  }
+  .header__nav {
+    margin-left: auto;
+    ul {
+      list-style: none;
+      li {
+        display: inline-block;
+        margin: 0 12px;
+        .nav-link {
+          color: var(--primary-font-color);
+          font-weight: bold;
+          font-size: 1.6rem;
+          text-decoration: none;
+          padding: 5px;
+          line-height: 1;
+          @include transition(0.3s, ease, color);
+
+          &:hover {
+            color: var(--secondary-font-color);
+          }
+
+          &.cta {
+            display: block;
+            padding: 10px 18px 14px;
+            background-color: var(--accent-bg-color);
+            color: var(--accent-contrast-font-color);
+            font-weight: normal;
+            &:hover {
+              background-color: var(--accent-font-color);
+            }
+          }
+        }
+      }
+    }
+  }
+}

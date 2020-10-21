@@ -1,17 +1,22 @@
 import React from 'react'
+import { MenuIcon, LogoSVG } from '../svg/Icons'
 
 function Header() {
   return (
     <header>
       <div className="wrapper header__wrapper">
+        <button className="menu-btn">
+          <MenuIcon />
+        </button>
         <a href="" className="brand_logo">
-          Brand
+          <LogoSVG />
         </a>
         <nav className="header__nav">
           <ul>
-            <li><a href="" className="nav-link">a</a></li>
-            <li><a href="" className="nav-link">b</a></li>
-            <li><a href="" className="nav-link">c</a></li>
+            <li><a href="" className="nav-link">Home</a></li>
+            <li><a href="" className="nav-link">Smartphone</a></li>
+            <li><a href="" className="nav-link">Store</a></li>
+            <li><a href="" className="nav-link cta">Buy Now</a></li>
           </ul>
         </nav>
       </div>

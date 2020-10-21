@@ -1,0 +1,11 @@
+@mixin transition($duration, $function: ease, $prop: all) {
+  -webkit-transition: $prop $duration $function;
+  -moz-transition: $prop $duration $function;
+  -ms-transition: $prop $duration $function;
+  -o-transition: $prop $duration $function;
+  transition: $prop $duration $function;
+}
+
+@mixin card-shadow($blur: 50px) {
+  box-shadow: 0 0 $blur rgba(0, 0, 0, 0.1);
+}
