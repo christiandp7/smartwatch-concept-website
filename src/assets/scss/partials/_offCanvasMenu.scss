@@ -11,6 +11,11 @@ aside {
   @include transition(0.5s, ease-out);
   &.open {
     margin-left: 0;
+    .sidebar__nav {
+      li {
+        // Agregar Animaciones tipo Reveal
+      }
+    }
   }
 
   .close {
