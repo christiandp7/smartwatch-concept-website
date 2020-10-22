@@ -17,9 +17,6 @@ function App() {
     <Fragment>
       <Header toggleMenu={toggleMenu} />
       <OffCanvasMenu toggleMenu={toggleMenu} ocMenu={ocMenuVisibility} />
-      { ocMenuVisibility && (
-        <div onClick={toggleMenu} class="sidebar-overlay"></div>
-      )}
     </Fragment>   
   )
 }

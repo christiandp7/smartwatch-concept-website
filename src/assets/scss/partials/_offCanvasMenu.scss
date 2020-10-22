@@ -68,5 +68,6 @@ aside {
   top: 0;
   left: 0;
   z-index: $z-overlays;
-  //@include transition(0.5s);
+  -webkit-animation: scale-in-center 0.5s both;
+  animation: scale-in-center 0.5s both;
 }

@@ -1,10 +1,13 @@
 import React from 'react'
+import { createPortal } from "react-dom";
 import { LogoSVG, Times } from '../svg/Icons'
 
 function OffCanvasMenu({ toggleMenu, ocMenu }) {
 
-  const mount = document.getElementById("portal-root");
-const el = document.createElement("div");
+  const portalContainer = document.getElementById("portals");
+  const overlay = (
+    <div onClick={toggleMenu} class="sidebar-overlay"></div>
+  )
   
   return (
     <aside className={ocMenu && 'open'}>
@@ -18,9 +21,10 @@ const el = document.createElement("div");
       <a href="" className="brand_logo">
         <LogoSVG />
       </a>
+      {
+        ocMenu && createPortal(overlay, portalContainer)
+      }
     </aside>
-
-
   )
 }
 
