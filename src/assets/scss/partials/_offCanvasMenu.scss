@@ -8,7 +8,7 @@ aside {
   left: 0;
   z-index: $z-fixed;
   overflow-x: hidden;
-  @include transition(0.3s);
+  @include transition(0.5s, ease-out);
   &.open {
     margin-left: 0;
   }
@@ -68,6 +68,6 @@ aside {
   top: 0;
   left: 0;
   z-index: $z-overlays;
-  -webkit-animation: scale-in-center 0.5s both;
-  animation: scale-in-center 0.5s both;
+  -webkit-animation: scale-in-center 0.5s ease-in both;
+  animation: scale-in-center 0.5s ease-in both;
 }
