@@ -1,0 +1,72 @@
+aside {
+  position: fixed;
+  background-color: var(--secondary-bg-color);
+  width: 320px;
+  margin-left: -320px;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: $z-fixed;
+  overflow-x: hidden;
+  @include transition(0.3s);
+  &.open {
+    margin-left: 0;
+  }
+
+  .close {
+    position: absolute;
+    top: 35px;
+    right: 35px;
+    background: transparent;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+
+    svg {
+      width: 1.8em;
+      height: 1.8em;
+    }
+  }
+  .sidebar__nav {
+    list-style: none;
+    padding-left: 2.8em;
+    margin-top: 100px;
+    li {
+      margin-top: 22px;
+      margin-bottom: 22px;
+      a {
+        color: var(--contrast-font-color);
+        font-size: 3rem;
+        text-decoration: none;
+        padding: 2px;
+        @include transition(0.3s);
+        &:hover {
+          color: var(--secondary-font-color);
+        }
+      }
+    }
+  }
+  .brand_logo {
+    display: block;
+    position: absolute;
+    bottom: 25px;
+    right: 30px;
+    svg {
+      max-width: 160px;
+      path {
+        fill: var(--primary-bg-color);
+      }
+    }
+  }
+}
+
+.sidebar-overlay {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+  z-index: $z-overlays;
+  //@include transition(0.5s);
+}

@@ -1,11 +1,12 @@
 import React from 'react'
 import { MenuIcon, LogoSVG } from '../svg/Icons'
 
-function Header() {
+function Header({ toggleMenu }) {
+  
   return (
     <header>
       <div className="wrapper header__wrapper">
-        <button className="menu-btn">
+        <button onClick={toggleMenu} className="menu-btn">
           <MenuIcon />
         </button>
         <a href="" className="brand_logo">

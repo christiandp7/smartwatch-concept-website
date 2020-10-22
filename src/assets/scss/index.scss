@@ -8,7 +8,8 @@
 @import url(//db.onlinewebfonts.com/c/f8dac63f2ce0465b5d07a4717e8e228c?family=FF+Mark);
 
 // Partials
-@import "partials/_variables.scss";
+@import "partials/variables.scss";
 @import "partials/mixins";
-@import "partials/_base.scss";
+@import "partials/base.scss";
 @import "partials/header";
+@import "partials/offCanvasMenu";

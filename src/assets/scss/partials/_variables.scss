@@ -7,18 +7,32 @@ $md-break-max: 768px;
 $md-break-min: 769px;
 $lg-break-max: 1024px;
 $lg-break-min: 1025px;
+
 // wrapper
 $wrapper-max-width: 1100px;
+
+//Font
+$body-font-family: "FF Mark", sans-serif;
+
+// z-index
+$z-back: -1;
+$z-normal: 1;
+$z-front: 2;
+$z-overlays: 10;
+$z-fixed: 100;
 
 :root {
   // Background colors
   --primary-bg-color: #fff;
+  --secondary-bg-color: #000;
   --accent-bg-color: #f29494;
   // font
   --primary-font-color: #000;
   --secondary-font-color: #868686;
+  --contrast-font-color: #fff;
   --accent-font-color: #ef9c9c;
   --accent-contrast-font-color: #fff;
+
   // Dark theme
   --dark-color-1: #08162b;
   --dark-color-2: #2b3544;
