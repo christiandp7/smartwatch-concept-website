@@ -13,7 +13,9 @@
     .header__nav ul li .nav-link:not(.cta) {
       color: var(--primary-font-color-dark);
       font-weight: normal;
-      &:hover {
+      &:hover,
+      &:active,
+      &:focus {
         color: var(--accent-font-color);
       }
     }

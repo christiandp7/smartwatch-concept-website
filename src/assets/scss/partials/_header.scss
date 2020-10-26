@@ -41,7 +41,9 @@ header {
           line-height: 1;
           @include transition(0.3s, ease, color);
 
-          &:hover {
+          &:hover,
+          &:active,
+          &:focus {
             color: var(--secondary-font-color);
           }
 
@@ -51,7 +53,9 @@ header {
             background-color: var(--accent-bg-color);
             color: var(--accent-contrast-font-color);
             font-weight: normal;
-            &:hover {
+            &:hover,
+            &:active,
+            &:focus {
               background-color: var(--accent-font-color);
             }
           }
