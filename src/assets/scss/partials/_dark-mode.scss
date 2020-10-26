@@ -1,0 +1,21 @@
+.dark-mode {
+  background-color: var(--dark-color-1);
+  color: var(--primary-font-color-dark);
+
+  .menu-btn svg line {
+    stroke: var(--primary-font-color-dark);
+  }
+  header {
+    .brand_logo svg path {
+      fill: var(--primary-font-color-dark);
+    }
+
+    .header__nav ul li .nav-link:not(.cta) {
+      color: var(--primary-font-color-dark);
+      font-weight: normal;
+      &:hover {
+        color: var(--accent-font-color);
+      }
+    }
+  }
+}

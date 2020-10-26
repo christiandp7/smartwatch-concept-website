@@ -18,10 +18,10 @@ aside {
           @include slide-in-left(0.6s, null);
         }
         &:nth-child(2) {
-          @include slide-in-left(0.6s, 0.2s);
+          @include slide-in-left(0.6s, 0.15s);
         }
         &:nth-child(3) {
-          @include slide-in-left(0.6s, 0.4s);
+          @include slide-in-left(0.6s, 0.3s);
         }
       }
     }
