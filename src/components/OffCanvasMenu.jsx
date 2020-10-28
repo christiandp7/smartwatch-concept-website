@@ -7,21 +7,22 @@ function OffCanvasMenu({ toggleMenu, ocMenu }) {
 
   const portalContainer = document.getElementById("portals");
   const overlay = (
-    <div onClick={toggleMenu} class="sidebar-overlay"></div>
+    <div onClick={toggleMenu} className="sidebar-overlay"></div>
   )
   
   return (
-    <aside className={ocMenu && 'open'}>
+    <aside className={ocMenu ? 'open' : ''}>
       <button onClick={toggleMenu} className="close"><Times /></button>
       
       <ul className="sidebar__nav">
         <li><a href="">Home</a></li>
         <li><a href="">Smartphone</a></li>
         <li><a href="">Store</a></li>
-        <li className="themeSwitchLine">
-          <ThemeSwitch />
-        </li>
       </ul>
+
+      <div className="sidebar__switch">
+        <ThemeSwitch />
+      </div>
       
       <a href="" className="brand_logo">
         <LogoSVG />

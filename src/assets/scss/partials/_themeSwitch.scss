@@ -15,6 +15,17 @@
   height: 39px; // 26px
   width: 75px; // 50px
   //transform: scale(1.5);
+  @include not-selectable;
+
+  .themeSwitch_icon {
+    width: 24px;
+    user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+  }
   .themeSwitch_label_ball {
     background-color: #fff;
     border-radius: 50%;
@@ -30,48 +41,4 @@
 
 .themeSwitch_checkbox:checked + .themeSwitch_label .themeSwitch_label_ball {
   transform: translateX(36px);
-}
-
-.fa-moon {
-  //color: #f1c40f;
-  width: 22px;
-  height: 22px;
-  display: block;
-  background-color: #f1c40f;
-  border-radius: 50%;
-  position: relative;
-
-  &::after {
-    content: "";
-    width: 22px;
-    height: 22px;
-    display: block;
-    position: absolute;
-    background: #111;
-    border-radius: 50%;
-    top: -6px;
-    left: 6px;
-  }
-}
-
-.fa-sun {
-  //color: #f39c12;
-  width: 22px;
-  height: 22px;
-  display: block;
-  background: #f39c12;
-  border-radius: 50%;
-  position: relative;
-
-  /*&::after {
-    content: "";
-    width: 22px;
-    height: 22px;
-    display: block;
-    position: absolute;
-    background: #111;
-    border-radius: 50%;
-    top: -6px;
-    left: 6px;
-  }*/
 }

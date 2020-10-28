@@ -10,6 +10,22 @@
   box-shadow: 0 0 $blur rgba(0, 0, 0, 0.1);
 }
 
+// Helpers
+@mixin not-selectable {
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
+}
+@mixin not-draggable {
+  user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
 // Animations
 @mixin slide-in-left($duration, $delay) {
   -webkit-animation: slide-in-left $duration
