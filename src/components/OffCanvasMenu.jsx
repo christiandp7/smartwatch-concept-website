@@ -1,6 +1,7 @@
 import React from 'react'
+import ThemeSwitch from './ThemeSwitch';
 import { createPortal } from "react-dom";
-import { LogoSVG, Times } from '../svg/Icons'
+import { LogoSVG, Times } from '../svg/Icons';
 
 function OffCanvasMenu({ toggleMenu, ocMenu }) {
 
@@ -17,7 +18,11 @@ function OffCanvasMenu({ toggleMenu, ocMenu }) {
         <li><a href="">Home</a></li>
         <li><a href="">Smartphone</a></li>
         <li><a href="">Store</a></li>
+        <li className="themeSwitchLine">
+          <ThemeSwitch />
+        </li>
       </ul>
+      
       <a href="" className="brand_logo">
         <LogoSVG />
       </a>

@@ -24,6 +24,9 @@ aside {
           @include slide-in-left(0.6s, 0.3s);
         }
       }
+      .themeSwitchLine {
+        margin-top: 50px;
+      }
     }
   }
 
