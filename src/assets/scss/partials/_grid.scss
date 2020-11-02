@@ -1,0 +1,13 @@
+.container-lg {
+  max-width: $container-lg-max-width;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+.column {
+  flex: 50%;
+}

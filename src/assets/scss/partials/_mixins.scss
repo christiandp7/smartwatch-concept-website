@@ -10,6 +10,16 @@
   box-shadow: 0 0 $blur rgba(0, 0, 0, 0.1);
 }
 
+@mixin font-weight($weight) {
+  @if $weight == "heavy" {
+    font-family: "Mark Pro Heavy", sans-serif;
+  } @else if $weight == "bold" {
+    font-weight: bold;
+  } @else {
+    font-weight: normal;
+  }
+}
+
 // Helpers
 @mixin not-selectable {
   -webkit-user-select: none; /* Safari */

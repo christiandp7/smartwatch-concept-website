@@ -7,13 +7,19 @@
 /* Light */
 @import url(//db.onlinewebfonts.com/c/f8dac63f2ce0465b5d07a4717e8e228c?family=FF+Mark);
 
+/* Heavy */
+@import url(//db.onlinewebfonts.com/c/72112afab388987941068c3f7a741a53?family=Mark+Pro+Heavy);
+
 // Partials
 @import "partials/variables.scss";
 @import "partials/mixins";
 @import "partials/base.scss";
+@import "partials/grid";
 @import "partials/header";
 @import "partials/offCanvasMenu";
 @import "partials/themeSwitch";
+@import "partials/main";
+@import "partials/hero";
 
 // Dark Mode Theme
 @import "partials/dark-mode";

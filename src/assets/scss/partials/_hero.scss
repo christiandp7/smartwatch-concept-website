@@ -1,0 +1,33 @@
+.hero {
+  width: 100%;
+  min-height: calc(100vh - 100px);
+
+  .hero__content {
+    padding: 30px 50px;
+    .hero__title {
+      @include font-weight("heavy");
+      font-size: 7rem;
+      font-weight: bold;
+      word-break: keep-all;
+      margin: 5px 0;
+      line-height: 1;
+    }
+    .hero__subtitle {
+      font-size: 2rem;
+      font-weight: 300;
+      color: var(--accent-font-color);
+      letter-spacing: 10px;
+      text-transform: uppercase;
+      margin-bottom: 25px;
+    }
+    .hero__text {
+      color: var(--secondary-font-color);
+      margin: 5px 0;
+    }
+  }
+
+  .hero__bigWatch {
+    //max-width: 90%;
+    max-height: 100%;
+  }
+}
