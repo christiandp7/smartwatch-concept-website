@@ -3,10 +3,10 @@
   min-height: calc(100vh - 100px);
 
   .hero__content {
-    padding: 30px 50px;
+    padding: 30px 20px;
     .hero__title {
       @include font-weight("heavy");
-      font-size: 7rem;
+      font-size: 7.2rem;
       font-weight: bold;
       word-break: keep-all;
       margin: 5px 0;
@@ -16,11 +16,12 @@
       font-size: 2rem;
       font-weight: 300;
       color: var(--accent-font-color);
-      letter-spacing: 10px;
+      letter-spacing: 12px;
       text-transform: uppercase;
       margin-bottom: 25px;
     }
     .hero__text {
+      font-size: 1.6rem;
       color: var(--secondary-font-color);
       margin: 5px 0;
     }
