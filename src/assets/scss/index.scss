@@ -1,14 +1,17 @@
 // Font
 
-// Regular //@import url("//db.onlinewebfonts.com/c/88d825431bfee24234c96a4170553e7f?family=FF+Mark");
-// Medium //@import url(//db.onlinewebfonts.com/c/c3a19668fb0a51ec574b6deb7ac62ce4?family=FF+Mark);
-// Book //@import url(//db.onlinewebfonts.com/c/bd5a32d337e7d0a296b80cd3b7d0b1c0?family=FF+Mark);
-
 /* Light */
-@import url(//db.onlinewebfonts.com/c/f8dac63f2ce0465b5d07a4717e8e228c?family=FF+Mark);
-
+@import url("//db.onlinewebfonts.com/c/f8dac63f2ce0465b5d07a4717e8e228c?family=FF+Mark");
+/* Regular */
+@import url("//db.onlinewebfonts.com/c/7200c6dd8ac604abe09f5159e53a40c0?family=Mark+Pro");
+//@import url("//db.onlinewebfonts.com/c/88d825431bfee24234c96a4170553e7f?family=FF+Mark");
+/* Medium */
+//@import url("//db.onlinewebfonts.com/c/a05747eaf46bae50f19dfa950b86befd?family=Mark+Pro+Medium");
+//@import url(//db.onlinewebfonts.com/c/c3a19668fb0a51ec574b6deb7ac62ce4?family=FF+Mark);
+/* Book */
+//@import url(//db.onlinewebfonts.com/c/bd5a32d337e7d0a296b80cd3b7d0b1c0?family=FF+Mark);
 /* Heavy */
-@import url(//db.onlinewebfonts.com/c/72112afab388987941068c3f7a741a53?family=Mark+Pro+Heavy);
+@import url("//db.onlinewebfonts.com/c/72112afab388987941068c3f7a741a53?family=Mark+Pro+Heavy");
 
 // Partials
 @import "partials/variables.scss";

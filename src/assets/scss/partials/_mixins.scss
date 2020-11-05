@@ -13,10 +13,11 @@
 @mixin font-weight($weight) {
   @if $weight == "heavy" {
     font-family: "Mark Pro Heavy", sans-serif;
-  } @else if $weight == "bold" {
-    font-weight: bold;
+  } @else if $weight == "regular" {
+    font-family: "Mark Pro", sans-serif;
   } @else {
-    font-weight: normal;
+    // default
+    font-family: "FF Mark", sans-serif;
   }
 }
 

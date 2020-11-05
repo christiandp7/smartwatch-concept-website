@@ -2,6 +2,18 @@
   background-color: var(--dark-color-1);
   color: var(--primary-font-color-dark);
 
+  // base
+  p,
+  a,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: var(--primary-font-color-dark);
+  }
+
   .menu-btn svg line {
     stroke: var(--primary-font-color-dark);
   }
@@ -12,11 +24,21 @@
 
     .header__nav ul li .nav-link:not(.cta) {
       color: var(--primary-font-color-dark);
-      //font-weight: normal;
+      font-weight: normal;
+      @include font-weight("regular");
       &:hover,
       &:active,
       &:focus {
         color: var(--accent-font-color);
+      }
+    }
+  }
+
+  .hero {
+    .hero__content {
+      .hero__text {
+        color: var(--primary-font-color-dark);
+        @include font-weight("default");
       }
     }
   }

@@ -3,6 +3,7 @@
   min-height: calc(100vh - 100px);
 
   .hero__content {
+    @include font-weight("regular");
     padding: 30px 20px;
     .hero__title {
       @include font-weight("heavy");
@@ -24,6 +25,7 @@
       font-size: 1.6rem;
       color: var(--secondary-font-color);
       margin: 5px 0;
+      word-spacing: 3px;
     }
   }
 
