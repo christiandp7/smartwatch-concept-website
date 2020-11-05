@@ -36,6 +36,7 @@
   "dependencies": {
     "@glidejs/glide": "^3.4.1",
     "react": "^16.14.0",
+    "react-custom-scrollbars": "^4.2.1",
     "react-dom": "^16.14.0"
   },
   "eslintConfig": {

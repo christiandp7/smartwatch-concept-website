@@ -4,6 +4,8 @@ import Header from './components/Header'
 import OffCanvasMenu from './components/OffCanvasMenu'
 import Main from './components/Main'
 
+import Scrollbar from 'react-custom-scrollbars'
+
 function App() {
 
   const [ocMenuVisibility, setOCMenuVisibility] = useState(false);
@@ -15,13 +17,13 @@ function App() {
 
 
   return (
-    <Fragment>
+    <Scrollbar style={{ width: '100vw', height: '100vh' }}>
       <Header toggleMenu={toggleMenu} />
       <Main />
       
 
       <OffCanvasMenu toggleMenu={toggleMenu} ocMenu={ocMenuVisibility} />
-    </Fragment>   
+    </Scrollbar>   
   )
 }
 
