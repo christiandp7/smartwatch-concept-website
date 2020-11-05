@@ -53,6 +53,7 @@ header {
             background-color: var(--accent-bg-color);
             color: var(--accent-contrast-font-color);
             font-weight: normal;
+            @include transition(0.3s, ease, background);
             &:hover,
             &:active,
             &:focus {
