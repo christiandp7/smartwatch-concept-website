@@ -1,4 +1,6 @@
 import React from 'react'
+import SmartwatchCarousel from './SmartwatchCarousel'
+// assets
 import bigWatch from '../assets/images/smartwatch_pink.png'
 
 function Main() {
@@ -19,6 +21,7 @@ function Main() {
                   Lorem ipsum dolor sit amet, consectetur adipiscing<br />elit. Aliquam congue sed et leo, dignissim odio justo.
                 </p>
               </div>
+              <SmartwatchCarousel />
             </div>
             <div className="column">
               <img src={bigWatch} className="hero__bigWatch" alt="white smartwatch"/>
