@@ -18,11 +18,17 @@
 @import "partials/mixins";
 @import "partials/base.scss";
 @import "partials/grid";
+// Packages
+@import "partials/glide";
+// Components
 @import "partials/header";
 @import "partials/offCanvasMenu";
 @import "partials/themeSwitch";
 @import "partials/main";
 @import "partials/hero";
+
+// utils
+@import "partials/utils";
 
 // Dark Mode Theme
 @import "partials/dark-mode";

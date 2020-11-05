@@ -7,9 +7,9 @@ function Main() {
   return (
     <main>
       <section className="hero">
-        <div className="container-lg">
+        <div className="">
           <div className="row">
-            <div className="column">
+            <div className="column col-half text-center">
               <div className="hero__content">
                 <h1 className="hero__title">
                   Smartwatch
@@ -23,7 +23,7 @@ function Main() {
               </div>
               <SmartwatchCarousel />
             </div>
-            <div className="column">
+            <div className="column col-half">
               <img src={bigWatch} className="hero__bigWatch" alt="white smartwatch"/>
             </div>
           </div>
