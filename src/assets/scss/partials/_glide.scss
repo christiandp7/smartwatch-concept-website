@@ -7,9 +7,9 @@
 .glide {
   padding-right: 50px;
 }
-.glide__track {
-  //margin-right: 50px;
-}
+//.glide__track {
+//margin-right: 50px;
+//}
 .glide__slides {
   //align-items: flex-end;
 
@@ -41,12 +41,12 @@
       width: 50vw !important;
       padding-bottom: 15px;
     }
-    &.activated {
-      //height: 200px;
-      /*height: calc(80vh - 50px);
+    //&.activated {
+    //height: 200px;
+    /*height: calc(80vh - 50px);
       width: 50vw !important;*/
-      //width: 50vw !important;
-    }
+    //width: 50vw !important;
+    //}
   }
 }
 
