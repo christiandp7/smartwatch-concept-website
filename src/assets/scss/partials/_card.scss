@@ -1,0 +1,48 @@
+.Card {
+  padding: 1em 0.8em 0 0.8em;
+  border-radius: 40px;
+  text-align: center;
+  @include card-shadow;
+
+  .Card__heading {
+    margin-bottom: 0.8em;
+    .Card__title {
+      font-size: 2.5rem;
+      @include font-weight("heavy");
+      font-weight: bold;
+      line-height: 1;
+    }
+    .Card__subtitle {
+      line-height: 1;
+      position: relative;
+      color: var(--secondary-font-color);
+      span {
+        position: absolute;
+        top: -3px;
+        left: calc(50% - 5px);
+      }
+    }
+  }
+}
+
+.glide__slide {
+  &.glide__slide--active {
+    .Card {
+      padding: 0;
+      border-radius: initial;
+      background-color: transparent;
+      @include no-shadow;
+      .Card__heading {
+        display: none;
+        //opacity: 0;
+      }
+      .Card__image {
+        //max-height: calc(80vh - 50px);
+        max-width: 90%;
+      }
+    }
+  }
+  &.activated {
+    background-color: transparent;
+  }
+}

@@ -4,32 +4,58 @@
 // Optional Theme Stylesheet
 @import "node_modules/@glidejs/glide/src/assets/sass/glide.theme";
 
+.glide {
+  padding-right: 50px;
+}
+.glide__track {
+  //margin-right: 50px;
+}
 .glide__slides {
-  align-items: flex-end;
-  min-height: 220px;
+  //align-items: flex-end;
+
+  height: 85vh;
+  //align-items: center;
+  //min-height: 220px;
+  //min-height: 80vh;
 
   .glide__slide {
-    display: block;
-    border: 1px solid black;
-    line-height: 100px;
-    height: 100px;
-    //max-width: 100px;
+    display: flex;
+    align-items: flex-end;
+    //border: 1px solid black;
     margin: 0;
     text-align: center;
+    padding-bottom: 35px;
+    //min-height: 80vh;
 
-    transition: all 0.5s ease;
+    /*
+      Just remove this transition <---- HERE!
+    */
+    //transition: all 0.5s ease;
 
     &.glide__slide--active {
-      background: aquamarine;
+      //background: aquamarine;
       //@include transform-scale(1.5);
-      height: 200px;
+      //height: calc(80vh - 50px);
+
+      //align-items: center;
+      width: 50vw !important;
+      padding-bottom: 15px;
     }
     &.activated {
-      height: 200px;
+      //height: 200px;
+      /*height: calc(80vh - 50px);
+      width: 50vw !important;*/
+      //width: 50vw !important;
     }
   }
 }
 
 .glide__arrow--right {
-  right: -5em;
+  //right: -5em;
+  &.glide__arrow {
+    top: calc(50% - 20px);
+    border: 0;
+    text-shadow: none;
+    @include no-shadow;
+  }
 }

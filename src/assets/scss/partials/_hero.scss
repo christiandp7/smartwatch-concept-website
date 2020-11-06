@@ -1,12 +1,19 @@
 .hero {
+  position: relative;
   width: 100%;
   min-height: calc(100vh - 100px);
+
+  .container-lg {
+    position: absolute;
+  }
 
   .hero__content {
     display: inline-block;
     text-align: left;
     padding: 30px 20px;
     @include font-weight("regular");
+
+    //display: none;
 
     .hero__title {
       @include font-weight("heavy");

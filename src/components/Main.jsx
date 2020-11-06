@@ -7,7 +7,7 @@ function Main() {
   return (
     <main>
       <section className="hero">
-        <div className="">
+        <div className="container-lg">
           <div className="row">
             <div className="column col-half text-center">
               <div className="hero__content">
@@ -21,13 +21,14 @@ function Main() {
                   Lorem ipsum dolor sit amet, consectetur adipiscing<br />elit. Aliquam congue sed et leo, dignissim odio justo.
                 </p>
               </div>
-              <SmartwatchCarousel />
+              
             </div>
             <div className="column col-half">
-              <img src={bigWatch} className="hero__bigWatch" alt="white smartwatch"/>
+              {/*<img src={bigWatch} className="hero__bigWatch" alt="white smartwatch"/>*/}
             </div>
           </div>
         </div>
+        <SmartwatchCarousel />
       </section>
       
     </main>

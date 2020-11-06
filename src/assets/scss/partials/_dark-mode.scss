@@ -42,4 +42,16 @@
       }
     }
   }
+
+  .Card {
+    background-color: var(--dark-color-2);
+  }
+
+  //.glide {
+  .glide__arrow {
+    svg line {
+      stroke: var(--primary-font-color-dark);
+    }
+  }
+  //}
 }
